@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">  
+            <form class="form-horizontal" action='/registration' method="POST">
+                <fieldset>
+                <div id="legend">
+                    <legend class="">Register</legend>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="f_name">First Name</label>
+                    <div class="controls">
+                        <input type="text" id="f_name" name="f_name" class="input-xlarge">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="l_name">Last Name</label>
+                    <div class="controls">
+                        <input type="text" id="l_name" name="l_name" class="input-xlarge">
+                    </div>
+                </div>
+            
+                <div class="control-group">
+                    <label class="control-label" for="email">E-mail</label>
+                    <div class="controls">
+                        <input type="text" id="email" name="email" class="input-xlarge">
+                        <p class="help-block">Please provide your E-mail</p>
+                    </div>
+                </div>
+            
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="password" name="password" class="input-xlarge">
+                        <p class="help-block">Password should be at least 4 characters</p>
+                    </div>
+                </div>
+            
+                <div class="control-group">
+                    <label class="control-label" for="c_password">Password (Confirm)</label>
+                    <div class="controls">
+                    <input type="password" id="c_password" name="c_password" class="input-xlarge">
+                    <p class="help-block">Please confirm password</p>
+                    </div>
+                </div>
+            
+                <div class="control-group">
+                    <div class="controls">
+                        <button class="btn btn-success">Register</button>
+                    </div>
+                </div>
+                </fieldset>
+            </form>
+    </div>
+</body>
+</html>
